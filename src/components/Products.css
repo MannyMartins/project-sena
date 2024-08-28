@@ -1,0 +1,47 @@
+/* products.css */
+
+.box {
+  /* Fondo gris */
+  background-color: #f2f2f2; /* Puedes ajustar el tono de gris según tus preferencias */
+
+  /* Contenedor principal */
+  .box {
+    max-width: 1140px; /* Ajusta el ancho máximo según tu diseño */
+    margin: 0 auto;
+  }
+
+  /* Tarjetas de servicios */
+  .service-card {
+    border: 1px solid #ddd; /* Agrega un borde para separar las tarjetas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave al pasar el mouse */
+
+    &:hover {
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Títulos y texto */
+  h2,
+  h3,
+  p {
+    color: #333; /* Color de texto para mejor contraste */
+  }
+}
+
+.bg-transparent {
+  background-color: #2c1111 transparent;
+}
+
+.transition-opacity {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s ease-in-out, transform 0.3s;
+  margin: 20px;
+}
+
+.transition-opacity {
+  opacity: 0.5;
+  transform: scale(1.2);
+}

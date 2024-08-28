@@ -1,0 +1,31 @@
+.hero {
+  display: grid; /* O grid, según tu diseño */
+  align-items: center;
+  justify-content: center; /* O flex-start, etc. */
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1; /* Asegúrate que el contenido esté encima del fondo */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para imágenes y videos */
+  background-size: cover; /* Para imágenes de fondo */
+}
+
+.cta-button {
+  /* Estilos para tus botones */
+}
+
+.secondary {
+  /* Estilos específicos para el segundo botón */
+}

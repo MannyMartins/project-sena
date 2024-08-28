@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.navbar a:hover {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgba(
+    0,
+    0,
+    255,
+    0.2
+  ); /* Fondo azul transparente al pasar el mouse */
+  transform: scale(1.05); /* Escala ligeramente el elemento al pasar el mouse */
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif; /* Aplica la fuente Roboto Condensed a todo el cuerpo */
+}
+
+.text-white {
+  /* O puedes crear una nueva clase si prefieres */
+  color: white;
+  text-shadow: 0 0 3px #fff, /* Resplandor blanco más sutil */ 0 0 6px #fff,
+    0 0 9px #fff, 0 0 12px #00f, /* Resplandor azul más sutil */ 0 0 21px #00f;
+  font-size: 1.1rem; /* Ajusta el tamaño según tus necesidades */
+  font-weight: 500; /* Un poco de grosor para destacar */
+}
+
+.text-white-2 {
+  font-family: "Roboto", sans-serif; /* Este es el codigo para el tipo de fuente */
+  color: white; /* Color blanco */
+  font-size: 1.1rem; /* Tamaño de fuente legible (ajusta según tus necesidades) */
+  font-weight: 500; /* Grosor medio para un aspecto limpio y moderno */
+  line-height: 1.6; /* Interlineado cómodo para mejorar la legibilidad */
+}
+
+.bg-blue-600 {
+  background-color: #0089ff; /* Fondo negro para resaltar el neón */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombra azul neón */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Este es el efecto Neon del texto que se encuentra en el Navbar, aqui puede ser modificado */
+.text-shadow-neon {
+  color: #ffffff; /* Texto blanco */
+  text-shadow: 0 0 5px #f8ff66, /* Resplandor blanco */ 0 0 10px #f8ff66;
+  sombra-shadow: 0 0 60px rgba(0, 0, 255, 0.8);
+}
+
+.text-shadow-neon:hover {
+  text-shadow: 0 0 7px #fff,
+    /* Aumenta el resplandor blanco al pasar el mouse */ 0 0 14px #fff,
+    0 0 21px #fff, 0 0 28px #00f,
+    /* Aumenta el resplandor azul al pasar el mouse */ 0 0 49px #00f;
+}
+
+.bg-blue-600:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 255, 0.8);
+}
+
+.bg-gray-900 {
+  background-color: rgba(
+    31,
+    41,
+    55,
+    0.5
+  ); /* Fondo gris oscuro con 80% de opacidad */
+  text-align: center; /* Justifica el texto */
+}
+
+.title-primary {
+  font-family: "Roboto Condensed", sans-serif; /* Fuente Roboto Condensed */
+  color: white; /* Color blanco */
+  font-size: 3rem; /* Tamaño de fuente grande */
+  font-weight: 700; /* Grosor de fuente (puedes ajustar según tus preferencias) */
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil para resaltar el texto */
+  letter-spacing: 1px; /* Espaciado entre letras para mayor claridad */
+}
+
+.card {
+  background-color: #29aacf; /* Fondo gris claro */
+  border: 1px solid #29aacf; /* Borde gris */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gray-800 {
+  background-color: #333;
+  padding: 20px;
+}
+
+.bg-gray-800:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1),
+    0 0 30px rgba(0, 0, 0, 0.8); /* Naranja */
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
